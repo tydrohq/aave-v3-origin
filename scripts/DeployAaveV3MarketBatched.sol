@@ -8,4 +8,5 @@ import {TydroInkBitwiseInput} from '../src/deployments/inputs/TydroInkBitwiseInp
 
 contract Default is DeployAaveV3MarketBatchedBase, DefaultMarketInput {}
 
+// The deployer stays owner of AaveV3SetupBatch (only setMarketReport left), like Tydro's Ink market
 contract TydroInkBitwise is DeployAaveV3MarketBatchedBase, TydroInkBitwiseInput {}
