@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 import './MarketInput.sol';
 
 contract TydroInkBitwiseInput is MarketInput {
-  // TODO: PermissionedPayloadsController executor (owner = controller, 24h delay, proposer = Bitwise Super Admin Safe)
-  address constant EXECUTOR = address(0);
+  // PermissionedPayloadsController executor (owner = controller, 24h delay)
+  address constant EXECUTOR = 0x4a8c5c312DDB1f2407E358742c3Ff04404A09DB8;
   // Guardian Safe, 1/2 (Bitwise + Tydro)
   address constant GUARDIAN = 0xb76989534C9754f79C7151ef9c97627b43FDA595;
 
